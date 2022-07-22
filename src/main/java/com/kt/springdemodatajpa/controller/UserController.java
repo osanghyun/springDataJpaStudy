@@ -39,7 +39,7 @@ public class UserController {
 
         userService.join(userInfo);
 
-        return "redirect:/"; // 홈으로
+        return "redirect:/userInfos"; // userInfo로.
     }
 
     @GetMapping

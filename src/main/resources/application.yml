@@ -13,6 +13,16 @@ spring:
   # JPA
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     generate-ddl: true
+
+logging:
+  file:
+    name: dataJpaExLog
+  logback:
+    rolling policy:
+      max-history: 10
+  level:
+    sql: info
+    com.kt.springframework: debug
