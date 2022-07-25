@@ -1,7 +1,7 @@
 package com.kt.springdemodatajpa.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import com.kt.springdemodatajpa.domain.base.BaseEntity;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -9,9 +9,11 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 @Table
-public class UserInfo {
-    @Id @GeneratedValue(strategy = GenerationType.SEQUENCE)
+public class UserInfo extends BaseEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long index;
 
     private String userId;
@@ -21,5 +23,6 @@ public class UserInfo {
     private String email;
 
     private int age;
+
 
 }

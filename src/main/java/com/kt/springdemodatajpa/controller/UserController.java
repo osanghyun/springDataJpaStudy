@@ -4,7 +4,6 @@ import com.kt.springdemodatajpa.domain.UserInfo;
 import com.kt.springdemodatajpa.dto.UserForm;
 import com.kt.springdemodatajpa.service.UserService;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +15,6 @@ import java.util.List;
 @Controller
 @RequestMapping("/userInfos")
 @RequiredArgsConstructor
-@Slf4j
 public class UserController {
 
     private final UserService userService;
@@ -29,7 +27,6 @@ public class UserController {
 
     @PostMapping("/new")
     public String createUser(UserForm form) {
-//        log.info(form.toString());
 
         UserInfo userInfo = new UserInfo();
 

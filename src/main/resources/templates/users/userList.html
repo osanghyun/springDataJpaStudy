@@ -1,5 +1,10 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="Industry플랫폼" content="width=device-width">
+    <title></title>
+</head>
 <body>
 <div class="container">
     <div>
@@ -16,6 +21,8 @@
                 <td th:text="${userInfo.password}"></td>
                 <td th:text="${userInfo.email}"></td>
                 <td th:text="${userInfo.age}"></td>
+                <td th:text="${userInfo.getRegisterDate()}"></td>
+                <td th:text="${userInfo.getModifyDate()}"></td>
             </tr>
             </tbody>
         </table>

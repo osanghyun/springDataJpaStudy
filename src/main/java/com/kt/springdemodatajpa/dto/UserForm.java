@@ -1,5 +1,6 @@
 package com.kt.springdemodatajpa.dto;
 
+
 import lombok.*;
 
 @ToString
@@ -13,4 +14,5 @@ public class UserForm {
     private String password;
     private String email;
     private int age;
+
 }

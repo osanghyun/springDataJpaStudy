@@ -993,3 +993,435 @@ java.lang.NullPointerException: Cannot invoke "java.util.Optional.ifPresent(java
 2022-07-25 16:31:11.033  INFO 40635 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-25 16:31:11.034  INFO 40635 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-07-25 16:31:11.035  INFO 40635 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 16:32:15.783  INFO 40917 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 40917 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 16:32:15.785  INFO 40917 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 16:32:16.106  INFO 40917 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 16:32:16.132  INFO 40917 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+2022-07-25 16:32:16.494  INFO 40917 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 16:32:16.499  INFO 40917 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 16:32:16.499  INFO 40917 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 16:32:16.551  INFO 40917 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 16:32:16.551  INFO 40917 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 733 ms
+2022-07-25 16:32:16.793  INFO 40917 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 16:32:16.877  INFO 40917 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 16:32:17.186  INFO 40917 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 16:32:17.499  WARN 40917 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 16:32:17.844  INFO 40917 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 16:32:17.851  INFO 40917 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.276 seconds (JVM running for 2.574)
+2022-07-25 16:32:20.844  INFO 40917 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 16:32:20.845  INFO 40917 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 16:32:20.847  INFO 40917 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 17:02:17.802  INFO 44876 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 44876 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 17:02:17.804  INFO 44876 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 17:02:18.197  INFO 44876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 17:02:18.230  INFO 44876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2022-07-25 17:02:18.690  INFO 44876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 17:02:18.696  INFO 44876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 17:02:18.697  INFO 44876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 17:02:18.753  INFO 44876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 17:02:18.753  INFO 44876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 918 ms
+2022-07-25 17:02:19.103  INFO 44876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 17:02:19.201  INFO 44876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 17:02:19.575  INFO 44876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:02:19.946  WARN 44876 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 17:02:20.324  INFO 44876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 17:02:20.331  INFO 44876 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.794 seconds (JVM running for 3.152)
+2022-07-25 17:02:49.343  INFO 44876 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-25 17:02:49.344  INFO 44876 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-25 17:02:49.345  INFO 44876 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-25 17:02:49.362  INFO 44876 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = home =======
+2022-07-25 17:02:49.362  INFO 44876 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : no parameter
+2022-07-25 17:02:49.368  INFO 44876 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = home =======
+2022-07-25 17:02:49.368  INFO 44876 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:02:49.368  INFO 44876 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = AI Industry플랫폼개발TF - Subject Ver.2!
+2022-07-25 17:03:00.750  INFO 44876 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 17:03:00.751  INFO 44876 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : no parameter
+2022-07-25 17:03:00.755  INFO 44876 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 17:03:00.755  INFO 44876 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:03:00.755  INFO 44876 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return value = users/createUserForm
+2022-07-25 17:03:11.762  INFO 44876 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 17:03:11.762  INFO 44876 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : parameter type = UserForm
+2022-07-25 17:03:11.763  INFO 44876 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : parameter value = UserForm(userId=hihelba, password=123, email=43452, age=33)
+2022-07-25 17:03:11.884  INFO 44876 --- [http-nio-9090-exec-3] c.k.s.aop.ExecutionTimer                 : 실행 메서드: join, 실행시간 = 119ms
+2022-07-25 17:03:11.884  INFO 44876 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 17:03:11.885  INFO 44876 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:03:11.885  INFO 44876 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return value = redirect:/userInfos
+2022-07-25 17:03:11.894  INFO 44876 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:03:11.894  INFO 44876 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 17:03:11.894  INFO 44876 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 17:03:11.904  INFO 44876 --- [http-nio-9090-exec-4] c.k.s.aop.ExecutionTimer                 : 실행 메서드: findUsers, 실행시간 = 9ms
+2022-07-25 17:03:11.904  INFO 44876 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:03:11.904  INFO 44876 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:03:11.904  INFO 44876 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 17:03:48.437  INFO 44876 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:03:48.438  INFO 44876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 17:03:48.440  INFO 44876 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 17:19:30.187  INFO 47148 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 47148 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 17:19:30.189  INFO 47148 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 17:19:30.553  INFO 47148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 17:19:30.589  INFO 47148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2022-07-25 17:19:31.054  INFO 47148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 17:19:31.061  INFO 47148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 17:19:31.061  INFO 47148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 17:19:31.121  INFO 47148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 17:19:31.121  INFO 47148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 895 ms
+2022-07-25 17:19:31.473  INFO 47148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 17:19:31.572  INFO 47148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 17:19:31.937  INFO 47148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:19:32.306  WARN 47148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 17:19:32.684  INFO 47148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 17:19:32.691  INFO 47148 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.748 seconds (JVM running for 3.078)
+2022-07-25 17:19:40.386  INFO 47148 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-25 17:19:40.386  INFO 47148 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-25 17:19:40.387  INFO 47148 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-25 17:19:40.404  INFO 47148 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 17:19:40.405  INFO 47148 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : no parameter
+2022-07-25 17:19:40.411  INFO 47148 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 17:19:40.411  INFO 47148 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:19:40.411  INFO 47148 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = users/createUserForm
+2022-07-25 17:19:49.994  INFO 47148 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 17:19:49.994  INFO 47148 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : parameter type = UserForm
+2022-07-25 17:19:49.994  INFO 47148 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : parameter value = UserForm(userId=hevsleif, password=rawe, email=rwae, age=33)
+2022-07-25 17:19:50.116  INFO 47148 --- [http-nio-9090-exec-2] c.k.s.aop.ExecutionTimer                 : 실행 메서드: join, 실행시간 = 118ms
+2022-07-25 17:19:50.116  INFO 47148 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 17:19:50.116  INFO 47148 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:19:50.116  INFO 47148 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return value = redirect:/userInfos
+2022-07-25 17:19:50.125  INFO 47148 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:19:50.125  INFO 47148 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 17:19:50.126  INFO 47148 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 17:19:50.135  INFO 47148 --- [http-nio-9090-exec-3] c.k.s.aop.ExecutionTimer                 : 실행 메서드: findUsers, 실행시간 = 9ms
+2022-07-25 17:19:50.136  INFO 47148 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:19:50.136  INFO 47148 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:19:50.136  INFO 47148 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 17:28:28.033  INFO 47148 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:28:28.034  INFO 47148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 17:28:28.036  INFO 47148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 17:28:30.940  INFO 48341 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 48341 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 17:28:30.942  INFO 48341 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 17:28:31.307  INFO 48341 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 17:28:31.342  INFO 48341 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2022-07-25 17:28:31.793  INFO 48341 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 17:28:31.801  INFO 48341 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 17:28:31.801  INFO 48341 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 17:28:31.860  INFO 48341 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 17:28:31.860  INFO 48341 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 886 ms
+2022-07-25 17:28:32.197  INFO 48341 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 17:28:32.298  INFO 48341 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 17:28:32.671  INFO 48341 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:28:33.028  WARN 48341 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 17:28:33.403  INFO 48341 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 17:28:33.411  INFO 48341 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.765 seconds (JVM running for 3.131)
+2022-07-25 17:28:39.084  INFO 48341 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-25 17:28:39.085  INFO 48341 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-25 17:28:39.085  INFO 48341 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-25 17:28:39.107  INFO 48341 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:28:39.107  INFO 48341 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 17:28:39.107  INFO 48341 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 17:28:39.196  INFO 48341 --- [http-nio-9090-exec-1] c.k.s.aop.ExecutionTimer                 : 실행 메서드: findUsers, 실행시간 = 83ms
+2022-07-25 17:28:39.197  INFO 48341 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:28:39.197  INFO 48341 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:28:39.197  INFO 48341 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 17:28:59.804  INFO 48341 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 17:28:59.804  INFO 48341 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : no parameter
+2022-07-25 17:28:59.804  INFO 48341 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 17:28:59.805  INFO 48341 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:28:59.805  INFO 48341 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return value = users/createUserForm
+2022-07-25 17:29:15.198  INFO 48341 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 17:29:15.198  INFO 48341 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : parameter type = UserForm
+2022-07-25 17:29:15.199  INFO 48341 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : parameter value = UserForm(userId=oshosh12, password=rainrain, email=oshohs@ktkt, age=12)
+2022-07-25 17:29:15.248  INFO 48341 --- [http-nio-9090-exec-4] c.k.s.aop.ExecutionTimer                 : 실행 메서드: join, 실행시간 = 46ms
+2022-07-25 17:29:15.249  INFO 48341 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 17:29:15.249  INFO 48341 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:29:15.249  INFO 48341 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : return value = redirect:/userInfos
+2022-07-25 17:29:15.258  INFO 48341 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:29:15.258  INFO 48341 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 17:29:15.258  INFO 48341 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 17:29:15.262  INFO 48341 --- [http-nio-9090-exec-5] c.k.s.aop.ExecutionTimer                 : 실행 메서드: findUsers, 실행시간 = 3ms
+2022-07-25 17:29:15.262  INFO 48341 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:29:15.262  INFO 48341 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:29:15.262  INFO 48341 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 17:29:49.800  INFO 48341 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:29:49.801  INFO 48341 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 17:29:49.802  INFO 48341 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 17:29:53.038  INFO 48544 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 48544 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 17:29:53.040  INFO 48544 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 17:29:53.418  INFO 48544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 17:29:53.452  INFO 48544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2022-07-25 17:29:53.910  INFO 48544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 17:29:53.917  INFO 48544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 17:29:53.918  INFO 48544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 17:29:53.979  INFO 48544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 17:29:53.979  INFO 48544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 905 ms
+2022-07-25 17:29:54.308  INFO 48544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 17:29:54.406  INFO 48544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 17:29:54.780  INFO 48544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:29:55.142  WARN 48544 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 17:29:55.521  INFO 48544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 17:29:55.529  INFO 48544 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.764 seconds (JVM running for 3.126)
+2022-07-25 17:29:59.715  INFO 48544 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-25 17:29:59.715  INFO 48544 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-25 17:29:59.716  INFO 48544 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-25 17:29:59.729  INFO 48544 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 17:29:59.729  INFO 48544 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : no parameter
+2022-07-25 17:29:59.735  INFO 48544 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 17:29:59.735  INFO 48544 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:29:59.735  INFO 48544 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = users/createUserForm
+2022-07-25 17:30:05.554  INFO 48544 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 17:30:05.554  INFO 48544 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : parameter type = UserForm
+2022-07-25 17:30:05.554  INFO 48544 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : parameter value = UserForm(userId=32, password=12, email=12, age=32)
+2022-07-25 17:30:05.670  INFO 48544 --- [http-nio-9090-exec-2] c.k.s.aop.ExecutionTimer                 : 실행 메서드: join, 실행시간 = 112ms
+2022-07-25 17:30:05.670  INFO 48544 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 17:30:05.670  INFO 48544 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:30:05.670  INFO 48544 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return value = redirect:/userInfos
+2022-07-25 17:30:05.683  INFO 48544 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:30:05.683  INFO 48544 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 17:30:05.683  INFO 48544 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 17:30:05.693  INFO 48544 --- [http-nio-9090-exec-3] c.k.s.aop.ExecutionTimer                 : 실행 메서드: findUsers, 실행시간 = 9ms
+2022-07-25 17:30:05.693  INFO 48544 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:30:05.694  INFO 48544 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:30:05.694  INFO 48544 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 17:30:49.547  INFO 48544 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:30:49.548  INFO 48544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 17:30:49.549  INFO 48544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 17:32:21.372  INFO 48881 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 48881 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 17:32:21.373  INFO 48881 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 17:32:21.644  INFO 48881 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 17:32:21.665  INFO 48881 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2022-07-25 17:32:22.065  INFO 48881 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 17:32:22.075  INFO 48881 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 17:32:22.076  INFO 48881 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 17:32:22.143  INFO 48881 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 17:32:22.143  INFO 48881 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 744 ms
+2022-07-25 17:32:22.502  INFO 48881 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 17:32:22.603  INFO 48881 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 17:32:22.984  INFO 48881 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:32:23.367  WARN 48881 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 17:32:23.758  INFO 48881 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 17:32:23.766  INFO 48881 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.618 seconds (JVM running for 2.995)
+2022-07-25 17:32:29.601  INFO 48881 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-25 17:32:29.601  INFO 48881 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-25 17:32:29.602  INFO 48881 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-25 17:32:29.624  INFO 48881 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:32:29.624  INFO 48881 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 17:32:29.624  INFO 48881 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 17:32:29.713  INFO 48881 --- [http-nio-9090-exec-1] c.k.s.aop.ExecutionTimer                 : 실행 메서드: findUsers, 실행시간 = 82ms
+2022-07-25 17:32:29.713  INFO 48881 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:32:29.714  INFO 48881 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:32:29.714  INFO 48881 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 17:32:29.899 ERROR 48881 --- [http-nio-9090-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9090-exec-1] Exception processing template "users/userList": Exception evaluating SpringEL expression: "userInfo.getRegisterDate()." (template: "users/userList" - line 24, col 21)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "userInfo.getRegisterDate()." (template: "users/userList" - line 24, col 21)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: org.springframework.expression.spel.SpelParseException: Expression [userInfo.getRegisterDate().] @26: EL1044E: Unexpectedly ran out of input
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.internalException(InternalSpelExpressionParser.java:1041) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatDottedNode(InternalSpelExpressionParser.java:403) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatNode(InternalSpelExpressionParser.java:371) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPrimaryExpression(InternalSpelExpressionParser.java:359) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatUnaryExpression(InternalSpelExpressionParser.java:344) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPowerIncDecExpression(InternalSpelExpressionParser.java:303) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatProductExpression(InternalSpelExpressionParser.java:281) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatSumExpression(InternalSpelExpressionParser.java:263) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatRelationalExpression(InternalSpelExpressionParser.java:218) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalAndExpression(InternalSpelExpressionParser.java:205) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalOrExpression(InternalSpelExpressionParser.java:192) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatExpression(InternalSpelExpressionParser.java:153) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:131) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:52) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:43) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.getExpression(SPELVariableExpressionEvaluator.java:373) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.obtainComputedSpelExpression(SPELVariableExpressionEvaluator.java:321) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:182) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 64 common frames omitted
+
+2022-07-25 17:32:29.903 ERROR 48881 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "userInfo.getRegisterDate()." (template: "users/userList" - line 24, col 21)] with root cause
+
+org.springframework.expression.spel.SpelParseException: Expression [userInfo.getRegisterDate().] @26: EL1044E: Unexpectedly ran out of input
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.internalException(InternalSpelExpressionParser.java:1041) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatDottedNode(InternalSpelExpressionParser.java:403) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatNode(InternalSpelExpressionParser.java:371) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPrimaryExpression(InternalSpelExpressionParser.java:359) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatUnaryExpression(InternalSpelExpressionParser.java:344) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatPowerIncDecExpression(InternalSpelExpressionParser.java:303) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatProductExpression(InternalSpelExpressionParser.java:281) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatSumExpression(InternalSpelExpressionParser.java:263) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatRelationalExpression(InternalSpelExpressionParser.java:218) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalAndExpression(InternalSpelExpressionParser.java:205) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatLogicalOrExpression(InternalSpelExpressionParser.java:192) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.eatExpression(InternalSpelExpressionParser.java:153) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.InternalSpelExpressionParser.doParseExpression(InternalSpelExpressionParser.java:131) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:61) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.spel.standard.SpelExpressionParser.doParseExpression(SpelExpressionParser.java:33) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:52) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.springframework.expression.common.TemplateAwareExpressionParser.parseExpression(TemplateAwareExpressionParser.java:43) ~[spring-expression-5.3.21.jar:5.3.21]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.getExpression(SPELVariableExpressionEvaluator.java:373) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.obtainComputedSpelExpression(SPELVariableExpressionEvaluator.java:321) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:182) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-07-25 17:32:48.661  INFO 48881 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:32:48.662  INFO 48881 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 17:32:48.664  INFO 48881 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 17:32:50.645  INFO 48949 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 48949 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 17:32:50.647  INFO 48949 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 17:32:51.015  INFO 48949 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 17:32:51.045  INFO 48949 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2022-07-25 17:32:51.497  INFO 48949 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 17:32:51.508  INFO 48949 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 17:32:51.508  INFO 48949 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 17:32:51.575  INFO 48949 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 17:32:51.575  INFO 48949 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 892 ms
+2022-07-25 17:32:51.916  INFO 48949 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 17:32:52.014  INFO 48949 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 17:32:52.385  INFO 48949 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:32:52.747  WARN 48949 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 17:32:53.116  INFO 48949 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 17:32:53.124  INFO 48949 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.707 seconds (JVM running for 3.037)
+2022-07-25 17:33:01.041  INFO 48949 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-25 17:33:01.041  INFO 48949 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-25 17:33:01.042  INFO 48949 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-25 17:33:01.059  INFO 48949 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:33:01.059  INFO 48949 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 17:33:01.059  INFO 48949 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 17:33:01.140  INFO 48949 --- [http-nio-9090-exec-1] c.k.s.aop.ExecutionTimer                 : 실행 메서드: findUsers, 실행시간 = 75ms
+2022-07-25 17:33:01.140  INFO 48949 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:33:01.141  INFO 48949 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:33:01.141  INFO 48949 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 17:33:01.453  INFO 48949 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:33:01.453  INFO 48949 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 17:33:01.453  INFO 48949 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 17:33:01.458  INFO 48949 --- [http-nio-9090-exec-2] c.k.s.aop.ExecutionTimer                 : 실행 메서드: findUsers, 실행시간 = 4ms
+2022-07-25 17:33:01.458  INFO 48949 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 17:33:01.459  INFO 48949 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 17:33:01.459  INFO 48949 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 17:33:04.130  INFO 48949 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 17:33:04.131  INFO 48949 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 17:33:04.132  INFO 48949 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
