@@ -15,6 +15,8 @@ import java.lang.reflect.Method;
 public class RequestLoggingAspect {
 
     // com.kt.springdemodatajpa.controller 이하 패키지의 모든 클래스 이하 모든 메서드에 적용
+    // 파라미터가 몇개가 존재하던지 상관없이 적용.
+    // 반환형도 상관없이 적용.
     @Pointcut("execution(* com.kt.springdemodatajpa.controller..*.*(..))")
     private void cut(){}
 
