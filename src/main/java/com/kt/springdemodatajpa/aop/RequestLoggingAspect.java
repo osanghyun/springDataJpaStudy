@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 @Slf4j
 public class RequestLoggingAspect {
 
-    // com.aop.controller 이하 패키지의 모든 클래스 이하 모든 메서드에 적용
+    // com.kt.springdemodatajpa.controller 이하 패키지의 모든 클래스 이하 모든 메서드에 적용
     @Pointcut("execution(* com.kt.springdemodatajpa.controller..*.*(..))")
     private void cut(){}
 

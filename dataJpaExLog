@@ -440,3 +440,77 @@ java.lang.IllegalStateException: 이미 존재하는 회원입니다.
 2022-07-25 14:23:08.875  INFO 28098 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-25 14:23:08.876  INFO 28098 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-07-25 14:23:08.878  INFO 28098 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 14:27:37.670  INFO 28910 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 28910 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 14:27:37.672  INFO 28910 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 14:27:38.027  INFO 28910 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 14:27:38.056  INFO 28910 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2022-07-25 14:27:38.463  INFO 28910 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 14:27:38.468  INFO 28910 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 14:27:38.469  INFO 28910 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 14:27:38.530  INFO 28910 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 14:27:38.530  INFO 28910 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 825 ms
+2022-07-25 14:27:38.836  INFO 28910 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 14:27:38.925  INFO 28910 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 14:27:39.274  INFO 28910 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 14:27:39.583  WARN 28910 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 14:27:39.899  INFO 28910 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 14:27:39.906  INFO 28910 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.481 seconds (JVM running for 2.795)
+2022-07-25 14:27:43.141  INFO 28910 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 14:27:43.142  INFO 28910 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 14:27:43.143  INFO 28910 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-25 14:27:47.178  INFO 28935 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 28935 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-25 14:27:47.179  INFO 28935 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-25 14:27:47.494  INFO 28935 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-25 14:27:47.520  INFO 28935 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+2022-07-25 14:27:47.865  INFO 28935 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-25 14:27:47.870  INFO 28935 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-25 14:27:47.871  INFO 28935 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 14:27:47.924  INFO 28935 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-25 14:27:47.924  INFO 28935 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 716 ms
+2022-07-25 14:27:48.158  INFO 28935 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-25 14:27:48.240  INFO 28935 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-25 14:27:48.526  INFO 28935 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 14:27:48.812  WARN 28935 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-25 14:27:49.105  INFO 28935 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-25 14:27:49.112  INFO 28935 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.144 seconds (JVM running for 2.45)
+2022-07-25 14:27:56.407  INFO 28935 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-25 14:27:56.407  INFO 28935 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-25 14:27:56.408  INFO 28935 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-25 14:27:56.425  INFO 28935 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 14:27:56.425  INFO 28935 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 14:27:56.425  INFO 28935 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 14:27:56.489  INFO 28935 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 14:27:56.489  INFO 28935 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 14:27:56.489  INFO 28935 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 14:27:59.646  INFO 28935 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 14:27:59.646  INFO 28935 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 14:27:59.646  INFO 28935 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 14:27:59.652  INFO 28935 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 14:27:59.652  INFO 28935 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 14:27:59.652  INFO 28935 --- [http-nio-9090-exec-2] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 14:28:07.757  INFO 28935 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 14:28:07.758  INFO 28935 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : no parameter
+2022-07-25 14:28:07.758  INFO 28935 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : ======= method name = createForm =======
+2022-07-25 14:28:07.758  INFO 28935 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 14:28:07.758  INFO 28935 --- [http-nio-9090-exec-3] c.k.s.aop.RequestLoggingAspect           : return value = users/createUserForm
+2022-07-25 14:28:20.598  INFO 28935 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 14:28:20.599  INFO 28935 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : parameter type = UserForm
+2022-07-25 14:28:20.599  INFO 28935 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : parameter value = UserForm(userId=example, password=hello, email=world@kt.com, age=12)
+2022-07-25 14:28:20.639  INFO 28935 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : ======= method name = createUser =======
+2022-07-25 14:28:20.639  INFO 28935 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 14:28:20.639  INFO 28935 --- [http-nio-9090-exec-4] c.k.s.aop.RequestLoggingAspect           : return value = redirect:/userInfos
+2022-07-25 14:28:20.647  INFO 28935 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 14:28:20.647  INFO 28935 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 14:28:20.648  INFO 28935 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 14:28:20.651  INFO 28935 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 14:28:20.651  INFO 28935 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 14:28:20.651  INFO 28935 --- [http-nio-9090-exec-5] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 14:28:40.270  INFO 28935 --- [http-nio-9090-exec-6] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 14:28:40.271  INFO 28935 --- [http-nio-9090-exec-6] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-25 14:28:40.271  INFO 28935 --- [http-nio-9090-exec-6] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-25 14:28:40.277  INFO 28935 --- [http-nio-9090-exec-6] c.k.s.aop.RequestLoggingAspect           : ======= method name = list =======
+2022-07-25 14:28:40.278  INFO 28935 --- [http-nio-9090-exec-6] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-25 14:28:40.278  INFO 28935 --- [http-nio-9090-exec-6] c.k.s.aop.RequestLoggingAspect           : return value = users/userList
+2022-07-25 14:29:08.969  INFO 28935 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-25 14:29:08.970  INFO 28935 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-25 14:29:08.972  INFO 28935 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
