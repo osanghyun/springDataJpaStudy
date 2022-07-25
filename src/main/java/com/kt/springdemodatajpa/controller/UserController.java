@@ -1,6 +1,7 @@
 package com.kt.springdemodatajpa.controller;
 
 import com.kt.springdemodatajpa.domain.UserInfo;
+import com.kt.springdemodatajpa.dto.UserForm;
 import com.kt.springdemodatajpa.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,7 +29,7 @@ public class UserController {
 
     @PostMapping("/new")
     public String createUser(UserForm form) {
-        log.info(form.toString());
+//        log.info(form.toString());
 
         UserInfo userInfo = new UserInfo();
 

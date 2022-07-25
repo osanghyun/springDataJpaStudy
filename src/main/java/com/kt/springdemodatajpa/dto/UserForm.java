@@ -1,4 +1,4 @@
-package com.kt.springdemodatajpa.controller;
+package com.kt.springdemodatajpa.dto;
 
 import lombok.*;
 

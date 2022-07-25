@@ -1,21 +1,19 @@
-# Server Port
 server:
   port: 9090
 
 
 spring:
-  # SQL
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:25432/postgres
     username: fivupnow
     password: '!new1234'
-  # JPA
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     generate-ddl: true
+    database: postgresql
 
 logging:
   file:
@@ -26,3 +24,6 @@ logging:
   level:
     sql: info
     com.kt.springframework: debug
+    org:
+      springframework.web: info
+      hibernate: error
