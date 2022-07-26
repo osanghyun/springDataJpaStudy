@@ -1,7 +1,7 @@
 package com.kt.springdemodatajpa.controller;
 
-import com.kt.springdemodatajpa.domain.UserInfo;
-import com.kt.springdemodatajpa.dto.UserForm;
+import com.kt.springdemodatajpa.domain.UserEntity;
+import com.kt.springdemodatajpa.dto.UserDto;
 import com.kt.springdemodatajpa.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -26,25 +26,18 @@ public class UserController {
     }
 
     @PostMapping("/new")
-    public String createUser(UserForm form) {
+    public String createUser(UserDto userDto) {
 
-        UserInfo userInfo = new UserInfo();
-
-        userInfo.setUserId(form.getUserId());
-        userInfo.setPassword(form.getPassword());
-        userInfo.setEmail(form.getEmail());
-        userInfo.setAge(form.getAge());
-
-        userService.join(userInfo);
+        userService.join(userDto); // save user
 
         return "redirect:/userInfos"; // userInfo로.
     }
 
     @GetMapping
     public String list(Model model) {
-        List<UserInfo> userInfos = userService.findUsers();
+        List<UserDto> userDtoList = userService.getUsers();
 
-        model.addAttribute("userInfos", userInfos);
+        model.addAttribute("userList", userDtoList);
         return "users/userList";
     }
 }

@@ -15,14 +15,14 @@
                 <th>이름</th> </tr>
             </thead>
             <tbody>
-            <tr th:each="userInfo : ${userInfos}">
-                <td th:text="${userInfo.index}"></td>
-                <td th:text="${userInfo.userId}"></td>
-                <td th:text="${userInfo.password}"></td>
-                <td th:text="${userInfo.email}"></td>
-                <td th:text="${userInfo.age}"></td>
-                <td th:text="${userInfo.getRegisterDate()}"></td>
-                <td th:text="${userInfo.getModifyDate()}"></td>
+            <tr th:each="user : ${userList}">
+                <td th:text="${user.index}"></td>
+                <td th:text="${user.userId}"></td>
+                <td th:text="${user.password}"></td>
+                <td th:text="${user.email}"></td>
+                <td th:text="${user.age}"></td>
+                <td th:text="${user.getRegisterDate()}"></td>
+                <td th:text="${user.getModifyDate()}"></td>
             </tr>
             </tbody>
         </table>
