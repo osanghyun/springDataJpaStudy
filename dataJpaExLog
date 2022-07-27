@@ -830,3 +830,82 @@ org.springframework.expression.spel.SpelEvaluationException: EL1004E: Method cal
 2022-07-27 13:13:24.571  INFO 48164 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-27 13:13:24.572  INFO 48164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-07-27 13:13:24.573  INFO 48164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-27 13:21:04.499  INFO 48922 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 48922 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-27 13:21:04.500  INFO 48922 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-27 13:21:04.833  INFO 48922 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-27 13:21:04.854  INFO 48922 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-07-27 13:21:05.214  INFO 48922 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-27 13:21:05.219  INFO 48922 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-27 13:21:05.219  INFO 48922 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-27 13:21:05.273  INFO 48922 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-27 13:21:05.274  INFO 48922 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 742 ms
+2022-07-27 13:21:05.514  INFO 48922 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-27 13:21:05.596  INFO 48922 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-27 13:21:05.896  INFO 48922 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 13:21:06.210  WARN 48922 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-27 13:21:06.330  INFO 48922 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-07-27 13:21:06.519  INFO 48922 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-27 13:21:06.526  INFO 48922 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.235 seconds (JVM running for 2.533)
+2022-07-27 13:21:13.440  INFO 48922 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-27 13:21:13.440  INFO 48922 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-27 13:21:13.441  INFO 48922 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-27 13:21:13.454  INFO 48922 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = getUserInfos =======
+2022-07-27 13:21:13.455  INFO 48922 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : no parameter
+2022-07-27 13:21:13.521  INFO 48922 --- [http-nio-9090-exec-1] c.k.s.aop.ExecutionTimer                 : 실행 메서드: getUsers, 실행시간 = 60ms
+2022-07-27 13:21:13.521  INFO 48922 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = getUserInfos =======
+2022-07-27 13:21:13.522  INFO 48922 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = ListResponse
+2022-07-27 13:21:13.522  INFO 48922 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = com.kt.springdemodatajpa.model.ListResponse@3d23830e
+2022-07-27 13:24:01.370  INFO 48922 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 13:24:01.371  INFO 48922 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-27 13:24:01.372  INFO 48922 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-27 13:24:03.565  INFO 49329 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 49329 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-27 13:24:03.571  INFO 49329 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-27 13:24:03.908  INFO 49329 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-27 13:24:03.931  INFO 49329 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2022-07-27 13:24:04.292  INFO 49329 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-27 13:24:04.296  INFO 49329 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-27 13:24:04.297  INFO 49329 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-27 13:24:04.347  INFO 49329 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-27 13:24:04.359  INFO 49329 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2022-07-27 13:24:04.606  INFO 49329 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-27 13:24:04.689  INFO 49329 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-27 13:24:04.991  INFO 49329 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 13:24:05.322  WARN 49329 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-27 13:24:05.470  INFO 49329 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-07-27 13:24:05.679  INFO 49329 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-27 13:24:05.686  INFO 49329 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.385 seconds (JVM running for 2.715)
+2022-07-27 13:24:14.045  INFO 49329 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-27 13:24:14.045  INFO 49329 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-27 13:24:14.046  INFO 49329 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-27 13:24:37.156  INFO 49329 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 13:24:37.171  INFO 49329 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-27 13:24:37.192  INFO 49329 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-27 13:24:40.469  INFO 49413 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 49413 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-07-27 13:24:40.470  INFO 49413 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-27 13:24:40.808  INFO 49413 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-27 13:24:40.829  INFO 49413 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2022-07-27 13:24:41.191  INFO 49413 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-27 13:24:41.195  INFO 49413 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-27 13:24:41.196  INFO 49413 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-27 13:24:41.248  INFO 49413 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-27 13:24:41.248  INFO 49413 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
+2022-07-27 13:24:41.485  INFO 49413 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-27 13:24:41.562  INFO 49413 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-27 13:24:41.855  INFO 49413 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 13:24:42.163  WARN 49413 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-27 13:24:42.281  INFO 49413 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-07-27 13:24:42.461  INFO 49413 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-27 13:24:42.468  INFO 49413 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.225 seconds (JVM running for 2.513)
+2022-07-27 13:24:46.170  INFO 49413 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-27 13:24:46.170  INFO 49413 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-27 13:24:46.171  INFO 49413 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-27 13:24:46.185  INFO 49413 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = getAllUsers =======
+2022-07-27 13:24:46.186  INFO 49413 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter type = BindingAwareModelMap
+2022-07-27 13:24:46.186  INFO 49413 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : parameter value = {}
+2022-07-27 13:24:46.250  INFO 49413 --- [http-nio-9090-exec-1] c.k.s.aop.ExecutionTimer                 : 실행 메서드: getUsers, 실행시간 = 59ms
+2022-07-27 13:24:46.251  INFO 49413 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : ======= method name = getAllUsers =======
+2022-07-27 13:24:46.251  INFO 49413 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return type = String
+2022-07-27 13:24:46.251  INFO 49413 --- [http-nio-9090-exec-1] c.k.s.aop.RequestLoggingAspect           : return value = users/list
+2022-07-27 13:25:09.247  INFO 49413 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 13:25:09.248  INFO 49413 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-27 13:25:09.250  INFO 49413 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

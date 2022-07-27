@@ -32,8 +32,8 @@ public class UserController {
         return "redirect:/users/list"; // users로.
     }
 
-    @GetMapping
-    public String list(Model model) {
+    @GetMapping("/list")
+    public String getAllUsers(Model model) {
         List<UserDto> userDtoList = userService.getUsers();
 
         model.addAttribute("userList", userDtoList);
