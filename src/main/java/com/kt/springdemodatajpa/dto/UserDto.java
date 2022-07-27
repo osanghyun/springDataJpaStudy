@@ -18,8 +18,6 @@ public class UserDto {
     private String password;
     private String email;
     private int age;
-    private LocalDateTime registerDate;
-    private LocalDateTime modifyDate;
 
     public UserDto(UserEntity userEntity) {
         this.index = userEntity.getIndex();
@@ -27,8 +25,6 @@ public class UserDto {
         this.password = userEntity.getPassword();
         this.email = userEntity.getEmail();
         this.age = userEntity.getAge();
-        this.registerDate = userEntity.getRegisterDate();
-        this.modifyDate = userEntity.getModifyDate();
     }
 
 }

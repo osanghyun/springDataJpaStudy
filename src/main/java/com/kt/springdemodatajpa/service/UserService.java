@@ -8,6 +8,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 
+import java.lang.reflect.Array;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -46,15 +47,11 @@ public class UserService {
      */
 
 
-
-
     /**
      * 전체 회원 조회.
      */
     public List<UserDto> getUsers() {
-
         return userRepository.findAll().stream().map(UserDto::new).collect(Collectors.toList());
-
     }
 
 }

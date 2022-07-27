@@ -12,15 +12,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import static com.kt.springdemodatajpa.util.CommonResponseUtil.*;
 
-@RestController
-@RequestMapping("/api/user")
-@RequiredArgsConstructor
+//@RestController
+//@RequestMapping("/api/user")
+//@RequiredArgsConstructor
 public class UserApiController {
-    private final UserService userService;
-
-    @GetMapping("/list")
-    public ListResponse<UserDto> getUserInfos() {
-        // 요청값 처리 HttpEntity 설정 헤더 설정
-        return getSuccessListResponse(userService.getUsers());
-    }
+    // todo
+//    private final UserService userService;
+//
+//    @GetMapping("/list")
+//    public ListResponse<UserDto> getUserInfos() {
+//        // 요청값 처리 HttpEntity 설정 헤더 설정
+//        return getSuccessListResponse(userService.getUsers());
+//    }
 }

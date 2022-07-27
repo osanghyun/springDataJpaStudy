@@ -1,6 +1,5 @@
 package com.kt.springdemodatajpa.controller;
 
-import com.kt.springdemodatajpa.domain.UserEntity;
 import com.kt.springdemodatajpa.dto.UserDto;
 import com.kt.springdemodatajpa.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-@RequestMapping("/userInfos")
+@RequestMapping("/users")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -22,7 +21,7 @@ public class UserController {
 
     @GetMapping("/new")
     public String createForm() {
-        return "users/createUserForm";
+        return "users/create";
     }
 
     @PostMapping("/new")
@@ -30,7 +29,7 @@ public class UserController {
 
         userService.join(userDto); // save user
 
-        return "redirect:/userInfos"; // userInfo로.
+        return "redirect:/users/list"; // users로.
     }
 
     @GetMapping
@@ -38,6 +37,6 @@ public class UserController {
         List<UserDto> userDtoList = userService.getUsers();
 
         model.addAttribute("userList", userDtoList);
-        return "users/userList";
+        return "users/list";
     }
 }
