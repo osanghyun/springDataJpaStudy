@@ -1,14 +1,13 @@
 package com.kt.springdemodatajpa.service;
 
 import com.kt.springdemodatajpa.domain.UserEntity;
-import com.kt.springdemodatajpa.dto.UserDto;
+import com.kt.springdemodatajpa.dto.RequestUserDto;
+import com.kt.springdemodatajpa.dto.ResponseUserDto;
 import com.kt.springdemodatajpa.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 
-import java.lang.reflect.Array;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,18 +20,18 @@ public class UserService {
     /**
      * 회원가입. Create.
      */
-    public Long join(UserDto userDto) {
+    public void join(RequestUserDto requestUserDto) {
 
         UserEntity userEntity = new UserEntity();
 
-        userEntity.setUserId(userDto.getUserId());
-        userEntity.setPassword(userDto.getPassword());
-        userEntity.setEmail(userDto.getEmail());
-        userEntity.setAge(userDto.getAge());
+        userEntity.setUserId(requestUserDto.getUserId());
+        userEntity.setPassword(requestUserDto.getPassword());
+        userEntity.setEmail(requestUserDto.getEmail());
+        userEntity.setAge(requestUserDto.getAge());
 
         validateDuplicateUser(userEntity); // 중복 회원 검증.
-        var savedUser = userRepository.save(userEntity);
-        return savedUser.getIndex();
+
+        userRepository.save(userEntity);
     }
 
     private void validateDuplicateUser(UserEntity userEntity) {
@@ -42,16 +41,12 @@ public class UserService {
                 });
     }
 
-    /**
-     * 회원 정보 수정. Update
-     */
-
 
     /**
      * 전체 회원 조회.
      */
-    public List<UserDto> getUsers() {
-        return userRepository.findAll().stream().map(UserDto::new).collect(Collectors.toList());
+    public List<ResponseUserDto> getUsers() {
+        return userRepository.findAll().stream().map(ResponseUserDto::new).collect(Collectors.toList());
     }
 
 }

@@ -1,6 +1,7 @@
 package com.kt.springdemodatajpa.controller;
 
-import com.kt.springdemodatajpa.dto.UserDto;
+import com.kt.springdemodatajpa.dto.RequestUserDto;
+import com.kt.springdemodatajpa.dto.ResponseUserDto;
 import com.kt.springdemodatajpa.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/user")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -21,22 +22,22 @@ public class UserController {
 
     @GetMapping("/new")
     public String createForm() {
-        return "users/create";
+        return "user/create";
     }
 
     @PostMapping("/new")
-    public String createUser(UserDto userDto) {
+    public String createUser(RequestUserDto requestUserDto) {
 
-        userService.join(userDto); // save user
+        userService.join(requestUserDto); // save user
 
-        return "redirect:/users/list"; // users로.
+        return "redirect:/user/list"; // user list로.
     }
 
     @GetMapping("/list")
     public String getAllUsers(Model model) {
-        List<UserDto> userDtoList = userService.getUsers();
+        List<ResponseUserDto> responseUserDtoList = userService.getUsers();
 
-        model.addAttribute("userList", userDtoList);
-        return "users/list";
+        model.addAttribute("userList", responseUserDtoList);
+        return "user/list";
     }
 }

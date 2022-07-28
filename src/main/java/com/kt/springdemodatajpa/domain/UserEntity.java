@@ -1,6 +1,7 @@
 package com.kt.springdemodatajpa.domain;
 
 import com.kt.springdemodatajpa.domain.base.BaseEntity;
+import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
@@ -16,6 +17,7 @@ public class UserEntity extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long index;
 
+    @NotNull
     private String userId;
 
     private String password;
