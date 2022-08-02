@@ -4,11 +4,10 @@ package com.kt.springdemodatajpa.controller;
 import com.kt.springdemodatajpa.dto.RequestUserDto;
 import com.kt.springdemodatajpa.dto.ResponseUserDto;
 import com.kt.springdemodatajpa.model.ListResponse;
+import com.kt.springdemodatajpa.model.SingleResponse;
 import com.kt.springdemodatajpa.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import static com.kt.springdemodatajpa.util.CommonResponseUtil.*;
 

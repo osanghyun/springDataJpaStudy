@@ -4,9 +4,7 @@ package com.kt.springdemodatajpa.dto;
 import com.kt.springdemodatajpa.domain.UserEntity;
 import lombok.*;
 
-@ToString
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class RequestUserDto {

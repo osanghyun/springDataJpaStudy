@@ -6,9 +6,7 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 
-@ToString
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResponseUserDto {
