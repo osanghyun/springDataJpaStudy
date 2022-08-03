@@ -36,9 +36,10 @@ public class CommonResponseUtil {
     public static CommonResponse getSuccessCommonResponse() {
 
         var response = new CommonResponse();
-        response.setSuccess(true);
+
         response.setCode(200);
         response.setMsg("Success");
+        response.setSuccess(true);
 
         return response;
     }

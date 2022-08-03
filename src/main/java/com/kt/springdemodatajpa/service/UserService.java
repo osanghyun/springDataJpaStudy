@@ -3,6 +3,8 @@ package com.kt.springdemodatajpa.service;
 import com.kt.springdemodatajpa.domain.UserEntity;
 import com.kt.springdemodatajpa.dto.RequestUserDto;
 import com.kt.springdemodatajpa.dto.ResponseUserDto;
+import com.kt.springdemodatajpa.exception.CustomException;
+import com.kt.springdemodatajpa.exception.ErrorCode;
 import com.kt.springdemodatajpa.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -47,6 +49,12 @@ public class UserService {
      */
     public List<ResponseUserDto> getUsers() {
         return userRepository.findAll().stream().map(ResponseUserDto::new).collect(Collectors.toList());
+    }
+
+    public ResponseUserDto getUser(String userId) {
+        UserEntity userEntity = userRepository.findByUserId(userId).orElseThrow(
+                () -> new CustomException(ErrorCode.USER_NOT_FOUND));
+        return new ResponseUserDto(userEntity);
     }
 
 }

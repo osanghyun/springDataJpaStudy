@@ -1,0 +1,24 @@
+package com.kt.springdemodatajpa.exception;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class ControllerExceptionHandler {
+
+    @ExceptionHandler(CustomException.class)
+    protected ResponseEntity<ErrorResponse> handleCustomException(CustomException e) {
+
+        ErrorCode errorCode = e.getErrorCode();
+
+        ErrorResponse response
+                = ErrorResponse.create()
+                .status(errorCode.getStatus())
+                .code(errorCode.getCode())
+                .message(e.toString());
+        return new ResponseEntity<>(response, HttpStatus.resolve(errorCode.getStatus()));
+    }
+}

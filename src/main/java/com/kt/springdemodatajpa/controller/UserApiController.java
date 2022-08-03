@@ -27,5 +27,8 @@ public class UserApiController {
     /**
      * todo : find, save, delete 이용해서 API와 연동.
      */
-
+    @GetMapping("{userId}")
+    public SingleResponse<ResponseUserDto> getUser(@PathVariable String userId) {
+        return getSuccessSingleResponse(userService.getUser(userId));
+    }
 }

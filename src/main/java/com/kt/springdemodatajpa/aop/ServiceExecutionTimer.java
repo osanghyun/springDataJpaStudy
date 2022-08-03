@@ -14,7 +14,7 @@ import org.springframework.util.StopWatch;
 @Slf4j
 @Aspect
 @Component
-public class ExecutionTimer {
+public class ServiceExecutionTimer {
 
     // 조인 포인트 설정.
     @Pointcut("execution(* com.kt.springdemodatajpa.service..*.*(..))")

@@ -12,7 +12,8 @@ import java.lang.reflect.Method;
 @Component
 @Aspect
 @Slf4j
-public class RequestLoggingAspect {
+public class ControllerLoggingAspect {
+
 
     // com.kt.springdemodatajpa.controller 이하 패키지의 모든 클래스 이하 모든 메서드에 적용
     // 파라미터가 몇개가 존재하던지 상관없이 적용.
@@ -25,7 +26,7 @@ public class RequestLoggingAspect {
     public void beforeParameterLog(JoinPoint joinPoint) {
         // 메서드 정보 받아오기
         Method method = getMethod(joinPoint);
-        log.info("======= method name = {} =======", method.getName());
+        log.info("======= Controller Method Name = {} =======", method.getName());
 
         // 파라미터 받아오기
         Object[] args = joinPoint.getArgs();
@@ -41,8 +42,7 @@ public class RequestLoggingAspect {
     public void afterReturnLog(JoinPoint joinPoint, Object returnObj) {
         // 메서드 정보 받아오기
         Method method = getMethod(joinPoint);
-        log.info("======= method name = {} =======", method.getName());
-
+        log.info("======= Controller Method Name = {} =======", method.getName());
         log.info("return type = {}", returnObj.getClass().getSimpleName());
         log.info("return value = {}", returnObj);
     }
@@ -52,5 +52,7 @@ public class RequestLoggingAspect {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         return signature.getMethod();
     }
+
+
 
 }
