@@ -20,16 +20,19 @@ public class UserService {
     private final UserRepository userRepository;
 
     /**
-     * 회원가입. Create.
+     * 회원가입
+     * @param requestUserDto : 유저 정보
      */
     public void join(RequestUserDto requestUserDto) {
 
         UserEntity userEntity = new UserEntity();
 
-        userEntity.setUserId(requestUserDto.getUserId());
-        userEntity.setPassword(requestUserDto.getPassword());
-        userEntity.setEmail(requestUserDto.getEmail());
-        userEntity.setAge(requestUserDto.getAge());
+        userEntity.create(
+                requestUserDto.getUserId(),
+                requestUserDto.getPassword(),
+                requestUserDto.getEmail(),
+                requestUserDto.getAge()
+        );
 
         validateDuplicateUser(userEntity); // 중복 회원 검증.
 
@@ -39,22 +42,57 @@ public class UserService {
     private void validateDuplicateUser(UserEntity userEntity) {
         userRepository.findByUserId(userEntity.getUserId())
                 .ifPresent(m -> {
-                    throw new IllegalStateException("이미 존재하는 회원입니다.");
+                    throw new CustomException(ErrorCode.DUPLICATED_USER);
                 });
     }
 
 
     /**
      * 전체 회원 조회.
+     * @return 유저 목록
      */
     public List<ResponseUserDto> getUsers() {
         return userRepository.findAll().stream().map(ResponseUserDto::new).collect(Collectors.toList());
     }
 
+    /**
+     * 회원 조회
+     * @param userId : 유저 아이디 값
+     * @return 유저
+     */
     public ResponseUserDto getUser(String userId) {
         UserEntity userEntity = userRepository.findByUserId(userId).orElseThrow(
                 () -> new CustomException(ErrorCode.USER_NOT_FOUND));
         return new ResponseUserDto(userEntity);
     }
 
+    /**
+     * 회원 업데이트.
+     * @param requestUserDto : 변경 요청 유저 정보
+     * @return 변경된 유저 정보
+     */
+    public ResponseUserDto updateUser(RequestUserDto requestUserDto) {
+        UserEntity userEntity = userRepository.findByUserId(requestUserDto.getUserId()).orElseThrow(
+                () -> new CustomException(ErrorCode.USER_NOT_FOUND));
+
+        userEntity.update(
+                requestUserDto.getPassword(),
+                requestUserDto.getEmail(),
+                requestUserDto.getAge()
+        );
+
+        userRepository.save(userEntity); // 중복이있으면 자동적으로 업데이트
+        return new ResponseUserDto(userEntity);
+    }
+
+    /**
+     * 회원 삭제.
+     * @param userId : 타겟 유저 아이디.
+     */
+    public void deleteUser(String userId) {
+        UserEntity userEntity = userRepository.findByUserId(userId).orElseThrow(
+                () -> new CustomException(ErrorCode.USER_NOT_FOUND));
+
+        userRepository.delete(userEntity);
+    }
 }

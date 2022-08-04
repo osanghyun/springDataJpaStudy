@@ -19,10 +19,13 @@ public class ControllerLoggingAspect {
     // 파라미터가 몇개가 존재하던지 상관없이 적용.
     // 반환형도 상관없이 적용.
     @Pointcut("execution(* com.kt.springdemodatajpa.controller..*.*(..))")
-    private void cut(){}
+    private void all(){}
+
+    @Pointcut("execution(* com.kt.springdemodatajpa.controller.UserController.*(..))")
+    private void thyme(){}
 
     // Pointcut에 의해 필터링된 경로로 들어오는 경우 메서드 호출 전에 적용
-    @Before("cut()")
+    @Before("all()")
     public void beforeParameterLog(JoinPoint joinPoint) {
         // 메서드 정보 받아오기
         Method method = getMethod(joinPoint);
@@ -38,7 +41,7 @@ public class ControllerLoggingAspect {
     }
 
     // Poincut에 의해 필터링된 경로로 들어오는 경우 메서드 리턴 후에 적용
-    @AfterReturning(value = "cut()", returning = "returnObj")
+    @AfterReturning(value = "thyme()", returning = "returnObj")
     public void afterReturnLog(JoinPoint joinPoint, Object returnObj) {
         // 메서드 정보 받아오기
         Method method = getMethod(joinPoint);

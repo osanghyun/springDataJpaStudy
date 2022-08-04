@@ -10,7 +10,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StopWatch;
 
 
-
+// todo proxy pattern 공부.
+// todo stateless, sticky session
+// todo delete, update query auto commit 하면 안됨.
 @Slf4j
 @Aspect
 @Component

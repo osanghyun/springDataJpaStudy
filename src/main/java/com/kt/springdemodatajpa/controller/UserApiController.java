@@ -27,8 +27,23 @@ public class UserApiController {
     /**
      * todo : find, save, delete 이용해서 API와 연동.
      */
-    @GetMapping("{userId}")
+    @GetMapping("/userId/{userId}")
     public SingleResponse<ResponseUserDto> getUser(@PathVariable String userId) {
         return getSuccessSingleResponse(userService.getUser(userId));
+    }
+
+    @PostMapping("/create")
+    public void createUser(@RequestBody RequestUserDto requestUserDto) {
+        userService.join(requestUserDto);
+    }
+
+    @PutMapping("/update")
+    public SingleResponse<ResponseUserDto> updateUser(@RequestBody RequestUserDto requestUserDto) {
+        return getSuccessSingleResponse(userService.updateUser(requestUserDto));
+    }
+
+    @DeleteMapping ("/delete/userId/{userId}")
+    public void deleteUser(@PathVariable String userId) {
+        userService.deleteUser(userId);
     }
 }

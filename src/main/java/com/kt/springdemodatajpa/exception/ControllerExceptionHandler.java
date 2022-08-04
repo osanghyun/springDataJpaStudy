@@ -18,7 +18,7 @@ public class ControllerExceptionHandler {
                 = ErrorResponse.create()
                 .status(errorCode.getStatus())
                 .code(errorCode.getCode())
-                .message(e.toString());
+                .message(errorCode.getMessage());
         return new ResponseEntity<>(response, HttpStatus.resolve(errorCode.getStatus()));
-    }
+    } // todo Httpstatus.resosolve(errorCode.getStatus) null 일 수 있는 문제.
 }
