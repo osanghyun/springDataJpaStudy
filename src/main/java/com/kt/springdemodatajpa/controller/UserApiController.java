@@ -7,7 +7,9 @@ import com.kt.springdemodatajpa.model.ListResponse;
 import com.kt.springdemodatajpa.model.SingleResponse;
 import com.kt.springdemodatajpa.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
 
 import static com.kt.springdemodatajpa.util.CommonResponseUtil.*;
 
@@ -17,33 +19,34 @@ import static com.kt.springdemodatajpa.util.CommonResponseUtil.*;
 public class UserApiController {
     private final UserService userService;
 
+    @PostMapping("/create")
+    public void createUser(@Validated @RequestBody final RequestUserDto requestUserDto) {
+        userService.join(requestUserDto);
+    }
+
     @GetMapping("/list")
     public ListResponse<ResponseUserDto> getUsers() {
         // 요청값 처리 HttpEntity 설정 헤더 설정
         return getSuccessListResponse(userService.getUsers());
     }
 
-
-    /**
-     * todo : find, save, delete 이용해서 API와 연동.
-     */
     @GetMapping("/userId/{userId}")
     public SingleResponse<ResponseUserDto> getUser(@PathVariable String userId) {
         return getSuccessSingleResponse(userService.getUser(userId));
     }
 
-    @PostMapping("/create")
-    public void createUser(@RequestBody RequestUserDto requestUserDto) {
-        userService.join(requestUserDto);
-    }
-
     @PutMapping("/update")
-    public SingleResponse<ResponseUserDto> updateUser(@RequestBody RequestUserDto requestUserDto) {
+    public SingleResponse<ResponseUserDto> updateUser(@Validated @RequestBody RequestUserDto requestUserDto) {
         return getSuccessSingleResponse(userService.updateUser(requestUserDto));
     }
 
     @DeleteMapping ("/delete/userId/{userId}")
     public void deleteUser(@PathVariable String userId) {
         userService.deleteUser(userId);
+    }
+
+    @DeleteMapping("deleteAll")
+    public void deleteAllUser() {
+        userService.deleteAllUser();
     }
 }

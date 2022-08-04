@@ -95,4 +95,11 @@ public class UserService {
 
         userRepository.delete(userEntity);
     }
+
+    /**
+     * 전체 회원 삭제.
+     */
+    public void deleteAllUser() {
+        userRepository.deleteAll();
+    }
 }

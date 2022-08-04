@@ -5,6 +5,7 @@ import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 // setter 가 아닌 명확한 메서드 만들기. 어떤 의도인지 확인하기위해. 변경이 불가한 데이터도 변경될수있음.
 // user예약어 정리, 테이블 클래스 이름 애노테이션으로 다르게
@@ -18,7 +19,7 @@ public class UserEntity extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long index;
 
-    @NotNull
+    @NotBlank
     private String userId;
 
     private String password;
