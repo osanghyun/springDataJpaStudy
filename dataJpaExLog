@@ -1,505 +1,67 @@
-2022-08-04 10:17:12.975  INFO 69159 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 69159 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
-2022-08-04 10:17:12.982  INFO 69159 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
-2022-08-04 10:17:13.426  INFO 69159 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-04 10:17:13.452  INFO 69159 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
-2022-08-04 10:17:13.894  INFO 69159 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2022-08-04 10:17:13.901  INFO 69159 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-04 10:17:13.901  INFO 69159 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-08-04 10:17:13.959  INFO 69159 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-04 10:17:13.959  INFO 69159 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 940 ms
-2022-08-04 10:17:14.303  INFO 69159 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-04 10:17:14.411  INFO 69159 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-04 10:17:14.808  INFO 69159 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 10:17:15.172  WARN 69159 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-04 10:17:15.314  INFO 69159 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-08-04 10:17:15.551  INFO 69159 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
-2022-08-04 10:17:15.559  INFO 69159 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.868 seconds (JVM running for 3.426)
-2022-08-04 10:17:36.282  INFO 69159 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-04 10:17:36.282  INFO 69159 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-04 10:17:36.283  INFO 69159 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-04 10:17:36.297  INFO 69159 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUsers =======
-2022-08-04 10:17:36.298  INFO 69159 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : no parameter
-2022-08-04 10:17:36.383  INFO 69159 --- [http-nio-9090-exec-2] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUsers, 실행시간 = 79ms
-2022-08-04 10:17:41.950  INFO 69159 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 10:17:41.950  INFO 69159 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:17:41.950  INFO 69159 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:17:41.962  INFO 69159 --- [http-nio-9090-exec-3] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 11ms
-2022-08-04 10:17:41.964  INFO 69159 --- [http-nio-9090-exec-3] c.k.s.aop.ExceptionLoggingAspect         : ======= Exception method name = handleCustomException =======
-2022-08-04 10:17:41.964  INFO 69159 --- [http-nio-9090-exec-3] c.k.s.aop.ExceptionLoggingAspect         : <404 NOT_FOUND Not Found,ErrorResponse(timestamp=2022-08-04T10:17:41.963508, status=404, message=User Not Found, code=U002),[]>
-2022-08-04 10:17:45.734  INFO 69159 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 10:17:45.735  INFO 69159 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 10:17:45.735  INFO 69159 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=sylee, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 10:17:45.778  INFO 69159 --- [http-nio-9090-exec-4] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 41ms
-2022-08-04 10:17:48.225  INFO 69159 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 10:17:48.226  INFO 69159 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:17:48.226  INFO 69159 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:17:48.229  INFO 69159 --- [http-nio-9090-exec-5] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 3ms
-2022-08-04 10:17:52.055  INFO 69159 --- [http-nio-9090-exec-6] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = updateUser =======
-2022-08-04 10:17:52.056  INFO 69159 --- [http-nio-9090-exec-6] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 10:17:52.056  INFO 69159 --- [http-nio-9090-exec-6] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=sylee, password=9999999, email=sylee@gmail.com, age=17)
-2022-08-04 10:17:52.070  INFO 69159 --- [http-nio-9090-exec-6] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: updateUser, 실행시간 = 14ms
-2022-08-04 10:17:54.447  INFO 69159 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 10:17:54.447  INFO 69159 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:17:54.447  INFO 69159 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:17:54.452  INFO 69159 --- [http-nio-9090-exec-7] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 4ms
-2022-08-04 10:17:57.098  INFO 69159 --- [http-nio-9090-exec-8] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = deleteUser =======
-2022-08-04 10:17:57.098  INFO 69159 --- [http-nio-9090-exec-8] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:17:57.098  INFO 69159 --- [http-nio-9090-exec-8] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:17:57.110  INFO 69159 --- [http-nio-9090-exec-8] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: deleteUser, 실행시간 = 12ms
-2022-08-04 10:18:09.965  INFO 69159 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 10:18:09.966  INFO 69159 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-04 10:18:09.968  INFO 69159 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-04 10:21:57.259  INFO 69779 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 69779 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
-2022-08-04 10:21:57.261  INFO 69779 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
-2022-08-04 10:21:57.603  INFO 69779 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-04 10:21:57.624  INFO 69779 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
-2022-08-04 10:21:57.968  INFO 69779 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2022-08-04 10:21:57.973  INFO 69779 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-04 10:21:57.973  INFO 69779 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-08-04 10:21:58.024  INFO 69779 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-04 10:21:58.024  INFO 69779 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
-2022-08-04 10:21:58.260  INFO 69779 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-04 10:21:58.342  INFO 69779 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-04 10:21:58.715  INFO 69779 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 10:21:58.995  WARN 69779 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-04 10:21:59.098  INFO 69779 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-08-04 10:21:59.283  INFO 69779 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
-2022-08-04 10:21:59.290  INFO 69779 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.262 seconds (JVM running for 2.744)
-2022-08-04 10:22:07.678  INFO 69779 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-04 10:22:07.678  INFO 69779 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-04 10:22:07.679  INFO 69779 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-08-04 10:22:07.724  INFO 69779 --- [http-nio-9090-exec-1] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 10:22:07.724  INFO 69779 --- [http-nio-9090-exec-1] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 10:22:07.724  INFO 69779 --- [http-nio-9090-exec-1] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=sylee, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 10:22:07.830  INFO 69779 --- [http-nio-9090-exec-1] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 97ms
-2022-08-04 10:22:10.895  INFO 69779 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUsers =======
-2022-08-04 10:22:10.895  INFO 69779 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : no parameter
-2022-08-04 10:22:10.910  INFO 69779 --- [http-nio-9090-exec-3] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUsers, 실행시간 = 14ms
-2022-08-04 10:22:13.572  INFO 69779 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 10:22:13.572  INFO 69779 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:22:13.572  INFO 69779 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:22:13.575  INFO 69779 --- [http-nio-9090-exec-4] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 3ms
-2022-08-04 10:22:17.662  INFO 69779 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = updateUser =======
-2022-08-04 10:22:17.662  INFO 69779 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 10:22:17.662  INFO 69779 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=sylee, password=9999999, email=sylee@gmail.com, age=17)
-2022-08-04 10:22:17.672  INFO 69779 --- [http-nio-9090-exec-5] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: updateUser, 실행시간 = 10ms
-2022-08-04 10:22:23.110  INFO 69779 --- [http-nio-9090-exec-6] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 10:22:23.110  INFO 69779 --- [http-nio-9090-exec-6] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:22:23.110  INFO 69779 --- [http-nio-9090-exec-6] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:22:23.114  INFO 69779 --- [http-nio-9090-exec-6] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 3ms
-2022-08-04 10:22:30.683  INFO 69779 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 10:22:30.683  INFO 69779 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:22:30.683  INFO 69779 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:22:30.688  INFO 69779 --- [http-nio-9090-exec-7] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 4ms
-2022-08-04 10:22:35.960  INFO 69779 --- [http-nio-9090-exec-8] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = updateUser =======
-2022-08-04 10:22:35.960  INFO 69779 --- [http-nio-9090-exec-8] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 10:22:35.960  INFO 69779 --- [http-nio-9090-exec-8] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=sylee, password=9999999, email=sylee@gmail.com, age=17)
-2022-08-04 10:22:35.964  INFO 69779 --- [http-nio-9090-exec-8] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: updateUser, 실행시간 = 4ms
-2022-08-04 10:22:39.827  INFO 69779 --- [http-nio-9090-exec-9] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 10:22:39.827  INFO 69779 --- [http-nio-9090-exec-9] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:22:39.827  INFO 69779 --- [http-nio-9090-exec-9] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:22:39.831  INFO 69779 --- [http-nio-9090-exec-9] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 3ms
-2022-08-04 10:22:47.552  INFO 69779 --- [http-nio-9090-exec-10] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = updateUser =======
-2022-08-04 10:22:47.552  INFO 69779 --- [http-nio-9090-exec-10] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 10:22:47.552  INFO 69779 --- [http-nio-9090-exec-10] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=sylee, password=9991999, email=sylee@gmail.com, age=17)
-2022-08-04 10:22:47.564  INFO 69779 --- [http-nio-9090-exec-10] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: updateUser, 실행시간 = 10ms
-2022-08-04 10:22:50.661  INFO 69779 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 10:22:50.661  INFO 69779 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 10:22:50.661  INFO 69779 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 10:22:50.666  INFO 69779 --- [http-nio-9090-exec-2] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 4ms
-2022-08-04 10:26:13.859  INFO 69779 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 10:26:13.860  INFO 69779 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-04 10:26:13.861  INFO 69779 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-04 13:46:08.233  INFO 81412 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 81412 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
-2022-08-04 13:46:08.235  INFO 81412 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
-2022-08-04 13:46:08.601  INFO 81412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-04 13:46:08.626  INFO 81412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-2022-08-04 13:46:08.997  INFO 81412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2022-08-04 13:46:09.002  INFO 81412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-04 13:46:09.003  INFO 81412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-08-04 13:46:09.066  INFO 81412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-04 13:46:09.067  INFO 81412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 800 ms
-2022-08-04 13:46:09.267  INFO 81412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-04 13:46:09.357  INFO 81412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-04 13:46:09.687  INFO 81412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 13:46:09.975  WARN 81412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-04 13:46:10.087  INFO 81412 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-08-04 13:46:10.257  INFO 81412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
-2022-08-04 13:46:10.264  INFO 81412 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.255 seconds (JVM running for 2.577)
-2022-08-04 13:46:23.192  INFO 81412 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-04 13:46:23.193  INFO 81412 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-04 13:46:23.193  INFO 81412 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-08-04 13:46:23.248  INFO 81412 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 13:46:23.248  INFO 81412 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 13:46:23.248  INFO 81412 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 13:46:23.360  INFO 81412 --- [http-nio-9090-exec-2] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 102ms
-2022-08-04 13:46:32.227  INFO 81412 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 13:46:32.227  INFO 81412 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 13:46:32.227  INFO 81412 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=null, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 13:46:32.238  INFO 81412 --- [http-nio-9090-exec-3] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 10ms
-2022-08-04 13:46:48.303  INFO 81412 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUsers =======
-2022-08-04 13:46:48.303  INFO 81412 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : no parameter
-2022-08-04 13:46:48.313  INFO 81412 --- [http-nio-9090-exec-4] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUsers, 실행시간 = 10ms
-2022-08-04 13:47:42.062  INFO 81412 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 13:47:42.063  INFO 81412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-04 13:47:42.065  INFO 81412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-04 13:47:47.448  INFO 81648 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 81648 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
-2022-08-04 13:47:47.449  INFO 81648 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
-2022-08-04 13:47:47.819  INFO 81648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-04 13:47:47.844  INFO 81648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
-2022-08-04 13:47:48.220  INFO 81648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2022-08-04 13:47:48.225  INFO 81648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-04 13:47:48.225  INFO 81648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-08-04 13:47:48.279  INFO 81648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-04 13:47:48.279  INFO 81648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 801 ms
-2022-08-04 13:47:48.466  INFO 81648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-04 13:47:48.554  INFO 81648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-04 13:47:48.865  INFO 81648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 13:47:49.159  WARN 81648 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-04 13:47:49.275  INFO 81648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-08-04 13:47:49.448  INFO 81648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
-2022-08-04 13:47:49.455  INFO 81648 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.23 seconds (JVM running for 2.557)
-2022-08-04 13:48:04.668  INFO 81648 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-04 13:48:04.668  INFO 81648 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-04 13:48:04.669  INFO 81648 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-08-04 13:48:10.685  INFO 81648 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 13:48:10.685  INFO 81648 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 13:48:10.685  INFO 81648 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 13:48:10.750  INFO 81648 --- [http-nio-9090-exec-3] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 59ms
-2022-08-04 13:48:12.806  INFO 81648 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUsers =======
-2022-08-04 13:48:12.806  INFO 81648 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : no parameter
-2022-08-04 13:48:12.819  INFO 81648 --- [http-nio-9090-exec-4] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUsers, 실행시간 = 12ms
-2022-08-04 13:48:17.892  INFO 81648 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 13:48:17.892  INFO 81648 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 13:48:17.892  INFO 81648 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=null, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 13:48:17.901  INFO 81648 --- [http-nio-9090-exec-5] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 5ms
-2022-08-04 13:48:17.902  INFO 81648 --- [http-nio-9090-exec-5] c.k.s.aop.ExceptionLoggingAspect         : ======= Exception method name = handleCustomException =======
-2022-08-04 13:48:17.903  INFO 81648 --- [http-nio-9090-exec-5] c.k.s.aop.ExceptionLoggingAspect         : <400 BAD_REQUEST Bad Request,ErrorResponse(timestamp=2022-08-04T13:48:17.902488, status=400, message=Duplicated User Data, code=U001),[]>
-2022-08-04 13:48:34.888  INFO 81648 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 13:48:34.888  INFO 81648 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 13:48:34.888  INFO 81648 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=ss, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 13:48:34.934  INFO 81648 --- [http-nio-9090-exec-7] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 45ms
-2022-08-04 13:53:40.875  INFO 81648 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 13:53:40.876  INFO 81648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-04 13:53:40.878  INFO 81648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-04 13:53:44.383  INFO 82451 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 82451 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
-2022-08-04 13:53:44.384  INFO 82451 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
-2022-08-04 13:53:44.727  INFO 82451 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-04 13:53:44.750  INFO 82451 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
-2022-08-04 13:53:45.117  INFO 82451 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2022-08-04 13:53:45.122  INFO 82451 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-04 13:53:45.122  INFO 82451 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-08-04 13:53:45.179  INFO 82451 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-04 13:53:45.179  INFO 82451 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 765 ms
-2022-08-04 13:53:45.378  INFO 82451 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-04 13:53:45.468  INFO 82451 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-04 13:53:45.785  INFO 82451 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 13:53:46.096  WARN 82451 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-04 13:53:46.218  INFO 82451 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-08-04 13:53:46.388  INFO 82451 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
-2022-08-04 13:53:46.395  INFO 82451 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.234 seconds (JVM running for 2.531)
-2022-08-04 13:54:10.753  INFO 82451 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-04 13:54:10.754  INFO 82451 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-04 13:54:10.754  INFO 82451 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-08-04 13:54:10.766  INFO 82451 --- [http-nio-9090-exec-1] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = deleteAllUser =======
-2022-08-04 13:54:10.767  INFO 82451 --- [http-nio-9090-exec-1] c.k.s.aop.ControllerLoggingAspect        : no parameter
-2022-08-04 13:54:10.856  INFO 82451 --- [http-nio-9090-exec-1] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: deleteAllUser, 실행시간 = 83ms
-2022-08-04 13:54:16.877  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 13:54:16.877  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 13:54:16.877  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 13:54:16.890  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 12ms
-2022-08-04 13:54:16.891  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ExceptionLoggingAspect         : ======= Exception method name = handleCustomException =======
-2022-08-04 13:54:16.891  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ExceptionLoggingAspect         : <404 NOT_FOUND Not Found,ErrorResponse(timestamp=2022-08-04T13:54:16.891144, status=404, message=User Not Found, code=U002),[]>
-2022-08-04 13:54:19.275  INFO 82451 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUsers =======
-2022-08-04 13:54:19.275  INFO 82451 --- [http-nio-9090-exec-4] c.k.s.aop.ControllerLoggingAspect        : no parameter
-2022-08-04 13:54:19.285  INFO 82451 --- [http-nio-9090-exec-4] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUsers, 실행시간 = 9ms
-2022-08-04 13:54:26.055  INFO 82451 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 13:54:26.055  INFO 82451 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 13:54:26.055  INFO 82451 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 13:54:26.100  INFO 82451 --- [http-nio-9090-exec-5] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 41ms
-2022-08-04 13:54:26.106 ERROR 82451 --- [http-nio-9090-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction] with root cause
-
-javax.validation.ConstraintViolationException: Validation failed for classes [com.kt.springdemodatajpa.domain.UserEntity] during persist time for groups [javax.validation.groups.Default, ]
-List of constraint violations:[
-	ConstraintViolationImpl{interpolatedMessage='공백일 수 없습니다', propertyPath=userId, rootBeanClass=class com.kt.springdemodatajpa.domain.UserEntity, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
-]
-	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:100) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.1.jar:2.7.1]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.21.jar:5.3.21]
-	at jdk.proxy2/jdk.proxy2.$Proxy128.save(Unknown Source) ~[na:na]
-	at com.kt.springdemodatajpa.service.UserService.join(UserService.java:39) ~[main/:na]
-	at com.kt.springdemodatajpa.service.UserService$$FastClassBySpringCGLIB$$ca7c7eac.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-5.3.21.jar:5.3.21]
-	at com.kt.springdemodatajpa.aop.ServiceExecutionTimer.AssumeExecutionTime(ServiceExecutionTimer.java:34) ~[main/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.21.jar:5.3.21]
-	at com.kt.springdemodatajpa.service.UserService$$EnhancerBySpringCGLIB$$c396aaed.join(<generated>) ~[main/:na]
-	at com.kt.springdemodatajpa.controller.UserApiController.createUser(UserApiController.java:24) ~[main/:na]
-	at com.kt.springdemodatajpa.controller.UserApiController$$FastClassBySpringCGLIB$$c779539e.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.21.jar:5.3.21]
-	at com.kt.springdemodatajpa.controller.UserApiController$$EnhancerBySpringCGLIB$$5180af8.createUser(<generated>) ~[main/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2022-08-04 13:54:52.541  INFO 82451 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 13:54:52.541  INFO 82451 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 13:54:52.541  INFO 82451 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=null, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 13:54:52.549  INFO 82451 --- [http-nio-9090-exec-7] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 7ms
-2022-08-04 13:54:52.550 ERROR 82451 --- [http-nio-9090-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction] with root cause
-
-javax.validation.ConstraintViolationException: Validation failed for classes [com.kt.springdemodatajpa.domain.UserEntity] during persist time for groups [javax.validation.groups.Default, ]
-List of constraint violations:[
-	ConstraintViolationImpl{interpolatedMessage='공백일 수 없습니다', propertyPath=userId, rootBeanClass=class com.kt.springdemodatajpa.domain.UserEntity, messageTemplate='{javax.validation.constraints.NotBlank.message}'}
-]
-	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:214) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:100) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.1.jar:2.7.1]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.21.jar:5.3.21]
-	at jdk.proxy2/jdk.proxy2.$Proxy128.save(Unknown Source) ~[na:na]
-	at com.kt.springdemodatajpa.service.UserService.join(UserService.java:39) ~[main/:na]
-	at com.kt.springdemodatajpa.service.UserService$$FastClassBySpringCGLIB$$ca7c7eac.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-5.3.21.jar:5.3.21]
-	at com.kt.springdemodatajpa.aop.ServiceExecutionTimer.AssumeExecutionTime(ServiceExecutionTimer.java:34) ~[main/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.21.jar:5.3.21]
-	at com.kt.springdemodatajpa.service.UserService$$EnhancerBySpringCGLIB$$c396aaed.join(<generated>) ~[main/:na]
-	at com.kt.springdemodatajpa.controller.UserApiController.createUser(UserApiController.java:24) ~[main/:na]
-	at com.kt.springdemodatajpa.controller.UserApiController$$FastClassBySpringCGLIB$$c779539e.invoke(<generated>) ~[main/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.21.jar:5.3.21]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.21.jar:5.3.21]
-	at com.kt.springdemodatajpa.controller.UserApiController$$EnhancerBySpringCGLIB$$5180af8.createUser(<generated>) ~[main/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.64.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.64.jar:9.0.64]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2022-08-04 13:55:14.551  WARN 82451 --- [http-nio-9090-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 3, column: 6]]
-2022-08-04 13:55:19.828  INFO 82451 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = createUser =======
-2022-08-04 13:55:19.828  INFO 82451 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
-2022-08-04 13:55:19.828  INFO 82451 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=sylee, password=secret, email=sylee@gmail.com, age=17)
-2022-08-04 13:55:19.841  INFO 82451 --- [http-nio-9090-exec-2] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: join, 실행시간 = 12ms
-2022-08-04 13:55:24.903  INFO 82451 --- [http-nio-9090-exec-1] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
-2022-08-04 13:55:24.903  INFO 82451 --- [http-nio-9090-exec-1] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
-2022-08-04 13:55:24.903  INFO 82451 --- [http-nio-9090-exec-1] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
-2022-08-04 13:55:24.907  INFO 82451 --- [http-nio-9090-exec-1] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 3ms
-2022-08-04 13:55:30.050  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUsers =======
-2022-08-04 13:55:30.050  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : no parameter
-2022-08-04 13:55:30.054  INFO 82451 --- [http-nio-9090-exec-3] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUsers, 실행시간 = 3ms
-2022-08-04 13:57:07.408  INFO 82451 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 13:57:07.409  INFO 82451 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-04 13:57:07.410  INFO 82451 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-08-04 13:57:10.000  INFO 82891 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 82891 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
-2022-08-04 13:57:10.002  INFO 82891 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
-2022-08-04 13:57:10.356  INFO 82891 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-04 13:57:10.380  INFO 82891 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
-2022-08-04 13:57:10.767  INFO 82891 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2022-08-04 13:57:10.772  INFO 82891 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-04 13:57:10.772  INFO 82891 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
-2022-08-04 13:57:10.830  INFO 82891 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-04 13:57:10.830  INFO 82891 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 796 ms
-2022-08-04 13:57:11.041  INFO 82891 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-04 13:57:11.128  INFO 82891 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-04 13:57:11.447  INFO 82891 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 13:57:11.745  WARN 82891 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-04 13:57:11.863  INFO 82891 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2022-08-04 13:57:12.029  INFO 82891 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
-2022-08-04 13:57:12.035  INFO 82891 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.254 seconds (JVM running for 2.572)
-2022-08-04 13:57:14.846  INFO 82891 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-08-04 13:57:14.847  INFO 82891 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-08-04 13:57:14.849  INFO 82891 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-05 10:01:10.415  INFO 23522 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 23522 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-08-05 10:01:10.420  INFO 23522 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-08-05 10:01:10.938  INFO 23522 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-05 10:01:10.976  INFO 23522 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2022-08-05 10:01:11.768  INFO 23522 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-05 10:01:11.781  INFO 23522 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-05 10:01:11.781  INFO 23522 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-08-05 10:01:11.937  INFO 23522 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-05 10:01:11.941  INFO 23522 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1466 ms
+2022-08-05 10:01:12.482  INFO 23522 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-05 10:01:12.609  INFO 23522 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-05 10:01:13.035  INFO 23522 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-05 10:01:13.410  WARN 23522 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-05 10:01:13.567  INFO 23522 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-05 10:01:13.797  INFO 23522 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-05 10:01:13.805  INFO 23522 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 3.684 seconds (JVM running for 4.14)
+2022-08-05 10:01:22.501  INFO 23522 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-05 10:01:22.501  INFO 23522 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-05 10:01:22.502  INFO 23522 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-05 10:01:22.575  INFO 23522 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = updateUser =======
+2022-08-05 10:01:22.575  INFO 23522 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
+2022-08-05 10:01:22.575  INFO 23522 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=syee, password=9991999, email=sylee@gmail.com, age=17)
+2022-08-05 10:01:22.666  INFO 23522 --- [http-nio-9090-exec-2] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: updateUser, 실행시간 = 81ms
+2022-08-05 10:01:22.668  INFO 23522 --- [http-nio-9090-exec-2] c.k.s.aop.ExceptionLoggingAspect         : ======= Exception method name = handleCustomException =======
+2022-08-05 10:01:22.668  INFO 23522 --- [http-nio-9090-exec-2] c.k.s.aop.ExceptionLoggingAspect         : <404 NOT_FOUND Not Found,ErrorResponse(timestamp=2022-08-05T10:01:22.667844, status=404, message=User Not Found, code=U002),[]>
+2022-08-05 10:02:06.095  INFO 23522 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUsers =======
+2022-08-05 10:02:06.095  INFO 23522 --- [http-nio-9090-exec-3] c.k.s.aop.ControllerLoggingAspect        : no parameter
+2022-08-05 10:02:06.121  INFO 23522 --- [http-nio-9090-exec-3] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUsers, 실행시간 = 26ms
+2022-08-05 10:05:02.281  INFO 23522 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = updateUser =======
+2022-08-05 10:05:02.281  INFO 23522 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter type = RequestUserDto
+2022-08-05 10:05:02.281  INFO 23522 --- [http-nio-9090-exec-5] c.k.s.aop.ControllerLoggingAspect        : parameter value = RequestUserDto(index=null, userId=syee, password=9991999, email=sylee@gmail.com, age=17)
+2022-08-05 10:05:02.284  INFO 23522 --- [http-nio-9090-exec-5] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: updateUser, 실행시간 = 3ms
+2022-08-05 10:05:02.285  INFO 23522 --- [http-nio-9090-exec-5] c.k.s.aop.ExceptionLoggingAspect         : ======= Exception method name = handleCustomException =======
+2022-08-05 10:05:02.285  INFO 23522 --- [http-nio-9090-exec-5] c.k.s.aop.ExceptionLoggingAspect         : <404 NOT_FOUND Not Found,ErrorResponse(timestamp=2022-08-05T10:05:02.285107, status=404, message=User Not Found, code=U002),[]>
+2022-08-05 10:05:29.324  INFO 23522 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
+2022-08-05 10:05:29.324  INFO 23522 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
+2022-08-05 10:05:29.324  INFO 23522 --- [http-nio-9090-exec-7] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
+2022-08-05 10:05:29.327  INFO 23522 --- [http-nio-9090-exec-7] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 3ms
+2022-08-05 10:19:46.474  INFO 23522 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-05 10:19:46.474  INFO 23522 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-05 10:19:46.476  INFO 23522 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-05 10:19:50.278  INFO 26030 --- [main] c.k.s.DemoDataJpaApplication             : Starting DemoDataJpaApplication using Java 18.0.1.1 on osanghyeon-ui-MacBookPro.local with PID 26030 (/Users/osanghyeon/Study/SpringbootSubject/demoDataJpa/build/classes/java/main started by osanghyeon in /Users/osanghyeon/Study/SpringbootSubject/demoDataJpa)
+2022-08-05 10:19:50.280  INFO 26030 --- [main] c.k.s.DemoDataJpaApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-08-05 10:19:50.622  INFO 26030 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-05 10:19:50.645  INFO 26030 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2022-08-05 10:19:51.021  INFO 26030 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-08-05 10:19:51.032  INFO 26030 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-05 10:19:51.032  INFO 26030 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-08-05 10:19:51.081  INFO 26030 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-05 10:19:51.082  INFO 26030 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 772 ms
+2022-08-05 10:19:51.275  INFO 26030 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-05 10:19:51.365  INFO 26030 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-05 10:19:51.676  INFO 26030 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-05 10:19:51.980  WARN 26030 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-05 10:19:52.090  INFO 26030 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-08-05 10:19:52.252  INFO 26030 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-08-05 10:19:52.260  INFO 26030 --- [main] c.k.s.DemoDataJpaApplication             : Started DemoDataJpaApplication in 2.203 seconds (JVM running for 2.524)
+2022-08-05 10:20:02.709  INFO 26030 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-05 10:20:02.710  INFO 26030 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-05 10:20:02.710  INFO 26030 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-08-05 10:20:02.728  INFO 26030 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : ======= Controller Method Name = getUser =======
+2022-08-05 10:20:02.728  INFO 26030 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter type = String
+2022-08-05 10:20:02.728  INFO 26030 --- [http-nio-9090-exec-2] c.k.s.aop.ControllerLoggingAspect        : parameter value = sylee
+2022-08-05 10:20:02.795  INFO 26030 --- [http-nio-9090-exec-2] c.k.s.aop.ServiceExecutionTimer          : 실행 메서드: getUser, 실행시간 = 60ms
+2022-08-05 10:39:58.290  INFO 26030 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-05 10:39:58.292  INFO 26030 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-05 10:39:58.294  INFO 26030 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

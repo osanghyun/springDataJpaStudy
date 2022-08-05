@@ -35,12 +35,10 @@ public class ServiceExecutionTimer {
         } finally {
             stopWatch.stop();
 
-            long totalTimeMillis = stopWatch.getTotalTimeMillis();
-
             MethodSignature signature = (MethodSignature) joinPoint.getSignature();
             String methodName = signature.getMethod().getName();
 
-            log.info("실행 메서드: {}, 실행시간 = {}ms", methodName, totalTimeMillis);
+            log.info("실행 메서드: {}, 실행시간 = {}ms", methodName, stopWatch.getTotalTimeMillis());
         }
     }
 }
