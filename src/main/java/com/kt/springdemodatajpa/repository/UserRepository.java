@@ -1,7 +1,6 @@
 package com.kt.springdemodatajpa.repository;
 
 import com.kt.springdemodatajpa.domain.UserEntity;
-import org.springframework.data.domain.Example;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

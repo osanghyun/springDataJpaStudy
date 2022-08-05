@@ -1,7 +1,6 @@
 package com.kt.springdemodatajpa.domain;
 
 import com.kt.springdemodatajpa.domain.base.BaseEntity;
-import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
