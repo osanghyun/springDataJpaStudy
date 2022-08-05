@@ -1,6 +1,6 @@
 package com.kt.springdemodatajpa.dto;
 
-import com.kt.springdemodatajpa.domain.UserEntity;
+import com.kt.springdemodatajpa.domain.Member;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -18,13 +18,13 @@ public class ResponseUserDto {
     private LocalDateTime registerDate;
     private LocalDateTime modifyDate;
 
-    public ResponseUserDto(UserEntity userEntity) {
-        this.index = userEntity.getIndex();
-        this.userId = userEntity.getUserId();
-        this.password = userEntity.getPassword();
-        this.email = userEntity.getEmail();
-        this.age = userEntity.getAge();
-        this.registerDate = userEntity.getRegisterDate();
-        this.modifyDate = userEntity.getModifyDate();
+    public ResponseUserDto(Member member) {
+        this.index = member.getIndex();
+        this.userId = member.getUserId();
+        this.password = member.getPassword();
+        this.email = member.getEmail();
+        this.age = member.getAge();
+        this.registerDate = member.getRegisterDate();
+        this.modifyDate = member.getModifyDate();
     }
 }

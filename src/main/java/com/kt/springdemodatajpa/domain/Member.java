@@ -13,7 +13,7 @@ import javax.validation.constraints.NotBlank;
 @Getter
 @NoArgsConstructor
 @Table(name = "users") // 테이블 이름 지정가능함. 테이블 명으로 Entity는 잘 사용안함. 클래스와 이름 달라도됨.
-public class UserEntity extends BaseEntity {
+public class Member extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long index;

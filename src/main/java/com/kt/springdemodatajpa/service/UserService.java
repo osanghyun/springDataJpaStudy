@@ -1,6 +1,6 @@
 package com.kt.springdemodatajpa.service;
 
-import com.kt.springdemodatajpa.domain.UserEntity;
+import com.kt.springdemodatajpa.domain.Member;
 import com.kt.springdemodatajpa.dto.RequestUserDto;
 import com.kt.springdemodatajpa.dto.ResponseUserDto;
 import com.kt.springdemodatajpa.exception.CustomException;
@@ -25,22 +25,22 @@ public class UserService {
      */
     public void join(RequestUserDto requestUserDto) {
 
-        UserEntity userEntity = new UserEntity();
+        Member member = new Member();
 
-        userEntity.create(
+        member.create(
                 requestUserDto.getUserId(),
                 requestUserDto.getPassword(),
                 requestUserDto.getEmail(),
                 requestUserDto.getAge()
         );
 
-        validateDuplicateUser(userEntity); // 중복 회원 검증.
+        validateDuplicateUser(member); // 중복 회원 검증.
 
-        userRepository.save(userEntity);
+        userRepository.save(member);
     }
 
-    private void validateDuplicateUser(UserEntity userEntity) {
-        userRepository.findByUserId(userEntity.getUserId())
+    private void validateDuplicateUser(Member member) {
+        userRepository.findByUserId(member.getUserId())
                 .ifPresent(m -> {
                     throw new CustomException(ErrorCode.DUPLICATED_USER);
                 });
@@ -61,9 +61,9 @@ public class UserService {
      * @return 유저
      */
     public ResponseUserDto getUser(String userId) {
-        UserEntity userEntity = userRepository.findByUserId(userId).orElseThrow(
+        Member member = userRepository.findByUserId(userId).orElseThrow(
                 () -> new CustomException(ErrorCode.USER_NOT_FOUND));
-        return new ResponseUserDto(userEntity);
+        return new ResponseUserDto(member);
     }
 
     /**
@@ -72,17 +72,17 @@ public class UserService {
      * @return 변경된 유저 정보
      */
     public ResponseUserDto updateUser(RequestUserDto requestUserDto) {
-        UserEntity userEntity = userRepository.findByUserId(requestUserDto.getUserId()).orElseThrow(
+        Member member = userRepository.findByUserId(requestUserDto.getUserId()).orElseThrow(
                 () -> new CustomException(ErrorCode.USER_NOT_FOUND));
 
-        userEntity.update(
+        member.update(
                 requestUserDto.getPassword(),
                 requestUserDto.getEmail(),
                 requestUserDto.getAge()
         );
 
-        userRepository.save(userEntity); // 중복이있으면 자동적으로 업데이트
-        return new ResponseUserDto(userEntity);
+        userRepository.save(member); // 중복이있으면 자동적으로 업데이트
+        return new ResponseUserDto(member);
     }
 
     /**
@@ -90,10 +90,10 @@ public class UserService {
      * @param userId : 타겟 유저 아이디.
      */
     public void deleteUser(String userId) {
-        UserEntity userEntity = userRepository.findByUserId(userId).orElseThrow(
+        Member member = userRepository.findByUserId(userId).orElseThrow(
                 () -> new CustomException(ErrorCode.USER_NOT_FOUND));
 
-        userRepository.delete(userEntity);
+        userRepository.delete(member);
     }
 
     /**
